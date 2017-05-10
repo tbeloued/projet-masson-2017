@@ -8,6 +8,7 @@ typedef unsigned char Uchar ; /*redefinition plus compact du type */
 
 int main (void)
 {
+
   int d = INT_MAX;
   Uint u = UINT_MAX;
   long l = 1000 ;
@@ -17,12 +18,14 @@ int main (void)
   char * s = "chaîne";
   float f = 1.04;
   double e = 1500;
-  void * p = (void *) main; /* pointeur sur la fonction main.
-			       Il donnera juste l'adresse du debut du programme */
+  void * p = (void *) main;
+  /* pointeur sur la fonction main.
+     Il donnera juste l'adresse du debut du programme */
   /* le prototype de la fonction a écrire pour toutes les variables
- printf( "la variable vaut %<ici le type>, sa taille est %d et son adresse %p \n",
+     printf( "la variable vaut %<ici le type>, sa taille est %d et son adresse %p \n",
  <le nom>, sizeof( ) <le nom>; &<le nom>) ;
   */
+  
   printf("la variable vaut %d, sa taille est %lu et son adresse %p \n",d, sizeof(d), &d) ;
   printf("la variable vaut %u, sa taille est %lu et son adresse %p \n",u, sizeof(u), &u) ;
   printf("la variable vaut %ld, sa taille est %lu et son adresse %p \n",l, sizeof(l), &l) ;

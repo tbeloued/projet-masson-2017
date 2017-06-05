@@ -69,7 +69,7 @@ int main(int argc, char * argv[])
   int i = 0;
   int loop = 0;
   
-  fp = fopen("./test.txt", "r");
+  fp = fopen("./data.txt", "r");
   if (fp == NULL)
     exit(EXIT_FAILURE);
   
